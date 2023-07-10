@@ -1,0 +1,1466 @@
+body {
+    scroll-behavior: smooth;
+    margin: 0px;
+    background-color: white;
+}
+.foota{
+    padding:0px;
+}
+html {
+    scroll-behavior: smooth;
+    scrollbar-color:pink yellow;
+}
+@font-face{
+    font-family:forwel;
+    src:url('font/CormorantGaramond-Regular.ttf');
+}
+@font-face{
+    font-family:forcopy;
+    src:url('font/Agdasima-Regular.ttf');
+}
+@font-face{
+    font-family:forrest;
+    src:url('font/Kalam-Regular.ttf');
+}
+/* <!-- Header slider section Starts --> */
+#header {
+    padding-top: 0px;
+    margin-top: 0px;
+    list-style: none;
+    display: flex;
+    columns: 4vw 4vw 4vw 4vw;
+    column-gap: 4vw;
+    /* padding-right: 5px; */
+    /* background-color: rgb(14, 180, 14); */
+    background-color: #3A8891;
+    height: 3.2vw;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* box-shadow:0px 0.2vw 1vw 8px rgb(220, 248, 217); */
+    box-shadow:0px 0.2vw 1vw 8px #21acc8;
+}
+
+a{
+    text-decoration: none;
+    color: #F2DEBA;
+    font-weight: 6px;
+    font-size: 1.6vw;
+    /* border-style: solid; */
+    padding-right:2vw;
+}
+
+/* #search {
+    width: 13vw;
+    height: 2.7vw;
+    border-radius: 5px;
+    margin-right: 2vw;
+    font-size: 1.3vw;
+    display: flex;
+} */
+
+/*  image slider section Starts */
+
+
+#home{
+    position:static;
+    height:50vw;
+}
+.bg1{
+    width:98.6vw;
+    height:46.14vw;
+}
+.bg{
+    margin-top:2vw;
+    position:absolute;
+    width:100%;
+}
+.arrow{
+    padding:1.1vw 1.8vw;
+    padding-right:0.8vw;
+    /* padding-left:1.8vw; */
+
+    position:absolute;
+    top:22vw;
+    color:white;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 50%;
+    font-size :25px;
+    font-weight:bolder;
+    cursor:grab;
+    margin: auto 15px;
+    width:2.3vw;
+
+}
+.arrow:hover{
+    opacity: 0.7;
+}
+#right{
+    right:0px;
+    /* margin : 20px; */
+}
+
+/* image slider section Ends */
+
+
+/* Introduction part Starts here */
+#welcomediv {
+    margin-top:0px;
+    display: flex;
+    justify-content: center;
+}
+
+#welcome {
+    /* background-color: green; */
+    background-color: #159895;
+    margin-top: 4vw;
+    /* margin-left:0.5vw; */
+    width: 39vw;
+    padding:1vw 1vw;
+    color: #F2DEBA;
+    overflow-x: hidden;
+    border-style: solid;
+    border-color: #0E5E6F;
+    box-shadow: -3px 3px 5px grey;
+    font-size: 2.5vw;
+    letter-spacing: 0vw;
+    font-family: forwel;
+}
+
+#welcome:hover {  
+    width: 43.5vw;
+    padding-left: 0.8vw;
+    background-color: #57C5B6;
+    color: #002B5B;
+    box-shadow: -2px 2px 5px 5px #00FFCA;
+    border-color:#002B5B;
+    cursor: pointer;
+    letter-spacing: 0.2vw;
+}
+
+#tagline {
+    display: inline-block;
+    width: 35vw;
+    margin-top: 0.3vw;
+    margin-left: 33vw;
+    font-size: 1.4vw;
+    word-wrap: break-word;
+}
+
+#intro {
+    display: grid;
+    margin: 1vw 18vw 0vw 18vw;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vw;
+    /* margin-bottom:; */
+
+}
+
+.child {
+    font-family:forwel;
+    border-style: solid;
+    width: 20vw;
+    padding-top:0px;
+    height: 20vw;
+    overflow: hidden;
+    background-color: rgb(7, 172, 7);
+    background-color:#42f3c9;
+    color:#002B5B
+}
+@keyframes ani21 {
+    from {
+        transform: scale(1);
+        border-radius: 0vw;
+    }
+
+    to {
+        transform: scale(1.1);
+        border-radius: 1vw;
+    }
+}
+.child:hover{
+    transform: scale(1.1);
+    border-radius: 1vw;
+    animation: ani21 0.4s;
+}
+@keyframes ani2 {
+    from {
+        transform: scale(1);
+        border-radius: 0vw;
+    }
+
+    to {
+        transform: scale(0.9);
+        border-radius: 1vw;
+    }
+}
+#c2:hover{
+    transform: scale(0.9);
+    border-radius: 1vw;
+    animation: ani2 0.4s;
+}
+#c4:hover{
+    transform: scale(0.9);
+    border-radius: 1vw;
+    animation: ani2 0.4s;
+}#c6:hover{
+    transform: scale(0.9);
+    border-radius: 1vw;
+    animation: ani2 0.4s;
+}
+.para {
+    margin-top:1.5vw;
+    word-wrap: normal;
+    /* padding: 0vw 1.5vw; */
+    padding-left:2.5vw;
+    font-weight: 2vw;
+    font-size: 2.2vw;
+    color:#002B5B;
+    word-spacing: 1.5vw;
+}
+
+.para:hover{
+    transform: scale(1.1);
+    border-radius: 1vw;
+    animation: ani21 0.4s;
+}
+
+#restdiv {
+    height: 3vw;
+}
+
+#popular-rest {
+    display: inline-block;
+    padding: 0.75vw;
+    margin: 7vw 29vw 3vw 29vw;
+    background-color: #116A7B;
+    color: rgb(255, 255, 255);
+    font-size: 2.2vw;
+    font-family: forrest;
+    letter-spacing: 0.3vw;
+}
+
+@keyframes ani4 {
+    from {
+        transform: scaleX(1);
+        background-color: #116A7B;
+        color: white;
+        box-shadow: none;
+    }
+
+    to {
+        transform: scaleX(1.3);
+        color: #116A7B;
+        background-color: white;
+        border-style: solid;
+        border-color: #002B5B;
+        box-shadow: -0.5vw 0.3vw 3px #57C5B6;
+
+    }
+}
+/* Restaurant name section Starts here */
+#popular-rest:hover {
+    animation: ani4 1s;
+    animation-fill-mode:forwards;
+}
+
+#restaurant-container {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 5vw 5vw 5vw 5vw 5vw;
+    justify-content: space-evenly;
+    align-content: center;
+    row-gap: 1.5vw;
+}
+
+.res-name {
+    display: flex;
+    border-style: groove;
+    /* align-content: flex-start; */
+    justify-content: center;
+    background-color: #57C5B6;
+    /* background-color: rgb(57, 182, 43); */
+}
+.res-name:hover {
+    letter-spacing: 0.1vw;
+    box-shadow:0.4vw 0.4vw 10px #80ffee,-0.4vw 0.4vw 10px #80ffee, 0.4vw -0.4vw 10px #80ffee,-0.4vw -0.4vw 10px #80ffee ;
+    .res-name-child{
+        word-spacing: 0.3vw;
+        color:black;
+        /* text-shadow: -1vw 0.5vw 2px grey; */
+    }
+}
+.res-name-color{
+    display:flex;
+    align-items:center;
+    font-family: forrest;
+}
+.res-name-child {
+    font-weight: 2vw;
+    font-size:1.45vw;
+    color: #002B5B;
+    letter-spacing: 0.2vw;
+    /* padding-top:0px; */
+}
+/* Restaurant name section ends here */
+
+/* Why us? section starts */
+#whyus {
+    height: 5vw;
+}
+
+#facilities {
+    display: flex;
+    columns: 20vw 20vw 20vw 20vw;
+    padding: 2vw auto;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgb(196, 254, 220);
+    background-color: #b4fef9;
+    border-style: solid;
+}
+
+.facchild {
+    height: 19.4vw;
+    width: 17vw;
+    margin: 2vw auto;
+    display: flex;
+    columns: 12vw 3vw 2vw;
+    column-gap: 0vw;
+    background-color: rgb(30, 151, 30);
+    background-color: #159895;
+    justify-items: center;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: -0.5vw 0.5vw 12px #33ae9d;
+    border-radius: 5px;
+}
+@keyframes ani3 {
+    from {
+        transform: scale(1);
+        box-shadow:-0.5vw 0.5vw 7px #33ae9d;
+    }
+
+    to {
+        transform: scale(1.1);
+        box-shadow:-0.05vw 0.05vw 15px -6px  grey , 0.05vw 0.05vw 15px -6px grey, -0.05vw -0.05vw 15px -5px grey,0.05vw -0.05vw 15px -6px grey;
+    }
+}
+
+.facchild:hover {
+    animation: ani3 1s;
+    animation-fill-mode: forwards;
+}
+
+.fac {
+    margin:1vw;
+    width: 10vw;
+    height: 10vw;
+    border-style: solid;
+    /* margin:0px; */
+}
+.fac:hover{
+    filter:opacity(60%);
+}
+.head {
+    font-size: 1.3vw;
+    border-style: solid;
+    background-color: rgb(120, 196, 120);
+    background-color: #002B5B;
+    align-self: center;
+    padding: 0vw 0.5vw;
+    margin:0px;
+    font-family: forwel;
+    color:#C2DEDC;
+    /* margin:0.7 auto; */
+}
+.head:hover{
+    padding:0.3vw 1.2vw;
+
+}
+
+.line {
+    font-size: 1.2vw;
+    padding-top: 0.1vw;
+    /* color: #ECE5C7; */
+     color:yellow;
+    margin: 0.3vw 1vw;
+    font-family: forwel;
+}
+
+/* Why us? section Ends */
+
+/* Blog Section Starts  */
+#bloghead{
+    font-size:3.5vw;
+    font-weight:1.7vw;
+    margin-top:4vw;
+    background-color: brown;
+    color:wheat;
+    margin-bottom:1vw;
+    padding:0vw 1vw;
+    font-family: forwel;
+}
+#iframe{
+    height:30vw;
+    width:50vw;
+    border-style: groove;
+    border-width: 0.4vw;
+    border-color: brown;
+}
+#iframe:hover{
+    box-shadow: 1vw 1vw 1vw -1vw brown, -1vw 1vw 1vw -1vw brown, -1vw -1vw 1vw -1vw brown, 1vw -1vw 1vw -1vw brown;
+}
+#blog>button{
+    /* padding:1vw; */
+    height:3vw;
+    width:11vw;
+    margin:1vw auto;
+    background-color: brown;
+    color:white;
+    letter-spacing: 0.3vw;
+}
+#blog>button:hover{
+    color: brown;
+    background-color:white;
+    text-transform: uppercase;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    letter-spacing: 0.2vw;
+    columns: 24vw 50vw 5vw;
+}
+/* Blog Section Ends  */
+
+
+/* Contact section starts here */
+
+#contactlink{
+    display:inline-block;
+    /* justify-content: center;
+    align-content:center; */
+    margin:10vw 34vw 6vw 37vw;
+    background-color: green;
+    background-color: #57C5B6;
+    color:white;
+    padding: 0.5vw 1vw;
+    font-size:3.3vw;
+    letter-spacing: 0.5vw;
+    font-family:forwel;
+    /* font-family: forwel; */
+}
+
+#contact{
+    display:flex;
+    columns: 25vw 25vw 25vw;
+    column-gap: 2vw;
+    justify-content: center;
+    margin-bottom: 8vw;
+}
+.cont-child{
+    width:25vw;
+    height:14vw;
+    display:flex;
+    flex-direction: column;
+    background-color: #159895;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1vw;
+}
+.contimg{
+    margin:2vw;
+    margin-bottom: 0px;
+    width:6vw;
+    height:6vw;
+    filter:grayscale(100%);
+ } 
+ .contimg:hover{
+    filter:grayscale(0%);
+ }
+.conthead{
+    margin-top:0.2vw;
+    margin-bottom: 0.7vw;
+    color:white;
+    font-size:2vw;
+}
+.contpara{
+    margin-top: 0px;
+    color:#C2DEDC;
+    font-size:1.5vw ;
+}
+.for-a-tag{
+    text-decoration: none;
+    color: #002B5B;
+    font-weight: 0px;
+    font-size: 1.3vw;
+}
+
+.cont-child:hover{
+    box-shadow:0.7vw 0.7vw 1vw -0.5vw grey, -0.7vw -0.7vw 1vw -0.5vw grey, -0.7vw 0.7vw 1vw -0.5vw grey, 0.7vw -0.7vw 1vw -0.5vw grey;
+}
+/* Contact section Ends here */
+
+/* footer section Starts here*/
+#footer{
+    display:flex;
+    columns:60vw 39vw;
+    height:5vw;
+    column-gap:2.5vw;
+    border-style: double;
+    background-color: #57C5B6;
+}
+#footpara{
+    margin-top:0.5vw;
+    margin-bottom:0.5vw;
+    width:60vw;
+    border-right-style: solid;
+    border-color: #1A5F7A;
+    display:flex;
+    justify-content: flex-end;
+}
+#copyright{
+    align-self: center;
+    margin-right:3vw;
+    color:#011f41;
+    font-size:2vw;
+    font-family:forcopy;
+    word-spacing: 0.2vw;
+}
+#name{
+    font-size:2.3vw;
+    /* font-family:inherit; */
+}
+#footicon{
+    width:39vw;
+    display:flex;
+    column-gap:0vw;
+    direction: column;
+}
+
+.footimg{
+    margin:1vw;
+    height:3vw;
+    width:3vw;
+}
+
+
+/* footer section Ends here*/
+
+
+@media screen and (max-width:1000px) {
+    /* <!-- Header slider section Starts --> */
+    #header {
+        columns: 6vw 6vw 6vw 6vw;
+        column-gap: 4vw;
+        height: 4vw;
+        box-shadow:0px 0.3vw 2vw 6px rgb(220, 248, 217);
+    }   
+    
+    a{
+        font-size: 2.1vw;
+    }
+
+    
+    #home{
+        height:63vw;
+    }
+    .bg1{
+        height:55.14vw;
+    }
+    .bg{
+        margin-top:4vw;
+    }
+    .arrow{
+        padding:1.3vw;
+        top:29vw;
+        font-size :25px;
+    }
+    /* Header Portion Ends here */
+
+
+    /* Welcome portion Starts Here */
+
+    #welcome {
+        margin-top: 4vw;
+        /* margin-left:0.5vw; */
+        padding-left:1vw;
+        width: 48vw;
+        box-shadow: -3px 3px 5px grey;
+        font-size: 2.8vw;
+    }
+
+    #welcome:hover {  
+        width: 72vw;
+        font-size: 3.5vw;
+        letter-spacing: 0.5vw;
+    }
+
+    #tagline {
+        padding-top: 2vw;
+        width: 45vw;
+        margin-left: 28vw;
+        font-size: 1.9vw;
+    }
+
+        
+    #intro {
+        margin: 1vw 13vw 0vw 13vw;
+        grid-template-columns: 23vw 23vw 23vw;
+        grid-template-rows: 23vw 23vw;
+        /* margin-bottom:; */
+
+    }
+
+    .child {
+        width: 23vw;
+        height: 23vw;
+    }
+    .para {
+        padding: 2vw;
+        font-weight: 2vw;
+        font-size: 2.45vw;
+        word-spacing: 2.5vw;
+    }
+/* Welcome section Ends here */
+#whyus {
+    height: 8vw;
+}
+    /* Restaurant Name section Begins */
+    
+    #popular-rest {
+        margin: 0vw 0vw 3vw 25vw;
+        font-size: 2.8vw;
+    }
+        
+    @keyframes ani42 {
+        from {
+            transform: scaleX(1);
+            background-color: #116A7B;
+            color: white;
+            box-shadow: none;
+        }
+    
+        to {
+            opacity: 0.7;   
+            transform: scaleX(1.3);
+            color: #116A7B;
+            background-color: white;
+            border-style: solid;
+            border-color: #002B5B;
+            box-shadow: -0.5vw 0.3vw 3px #57C5B6;
+        }
+    }
+    #popular-rest:hover {
+        padding: 1vw;
+
+        animation : ani42 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    #restaurant-container {
+        grid-template-columns: 24vw 24vw 24vw;
+        grid-template-rows: 7vw 7vw 7vw 7vw 7vw;
+        row-gap: 1.7vw;
+    }
+    
+    .res-name:hover {
+        letter-spacing: 0.11vw;
+    }
+    .res-name-child{
+        font-size: 1.7vw;
+    }
+    /* restaurant Section completes here */
+    
+/* Facilities Portion Starts here */
+#facilities{
+    display:grid;
+    height:64vw;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 30vw 30vw;
+    row-gap:3vw;
+    padding-bottom: 2vw;
+}
+#shift1 {
+    margin-left:15vw;
+}
+#shift2{
+    margin-left:15vw;
+}
+.facchild {
+    height: 28vw;
+    width: 22vw;
+    margin: 1.8vw auto;
+    display: flex;
+    columns: 16vw 4vw 2.8vw;
+    flex-direction: column;
+    column-gap: 0.24vw;
+    box-shadow: -0.85vw 0.85vw 12px rgb(4, 67, 4);
+}
+
+.facchild:hover {
+    box-shadow:-0.085vw 0.085vw 15px -6px  grey , 0.085vw 0.085vw 15px -6px grey, -0.085vw -0.085vw 15px -5px grey,0.085vw -0.085vw 15px -6px grey;
+}
+
+.fac {
+    width: 14vw;
+    height: 14vw;
+    margin-top:0.9vw;
+    margin-bottom:0.5vw;
+}
+.head {
+    font-size: 1.8vw;
+    align-self: center;
+    padding: 0vw 1vw;
+    margin:0vw;
+}
+.line {
+    font-size: 1.7vw;
+    margin-top:1vw;
+}
+
+#restdiv {
+    height: 8vw;
+}
+/* Facility section Ends here */
+    /* Blog Section Starts  */
+#bloghead{
+    font-size:3.5vw;
+    font-weight:1.7vw;
+    margin-top:4vw;
+    margin-bottom:1vw;
+    padding:0vw 1vw;
+}
+#iframe{
+    height:40vw;
+    width:60vw;
+    border-width: 0.4vw;
+    
+}
+#iframe:hover{
+    box-shadow: 1vw 1vw 1vw -1vw brown, -1vw 1vw 1vw -1vw brown, -1vw -1vw 1vw -1vw brown, 1vw -1vw 1vw -1vw brown;
+}
+#blog>button{
+    /* padding:1vw; */
+    width:13vw;
+    margin:1vw auto;
+    letter-spacing: 0.3vw;
+}
+
+#blog{
+    columns: 24vw 50vw 5vw;
+}
+/* Blog Section Ends  */
+
+
+    /*  Contact section start */
+    #contactlink{
+        margin:10vw 20vw 6vw 37vw;
+        padding: 0.7vw 1.4vw;
+        font-size:3vw;
+    }
+
+    .cont-child{
+        height:15vw;
+    }
+    .cont-child:hover{
+        box-shadow:1vw 1vw 1.5vw -0.5vw silver,1vw -1vw 1.5vw -0.5vw silver,-1vw 1vw 1.5vw -0.5vw silver,-1vw -1vw 1.5vw -0.5vw silver
+        /* 1vw 1vw 1.5vw -0.5vw silver, -0.7vw -0.7vw 1vw -0.5vw silver, -0.7vw 0.7vw 1vw -0.5vw silver, 0.7vw -0.7vw 1vw -0.5vw silver; */
+    }
+    .contimg{
+        width:6vw;
+        height:6vw;
+    } 
+    .conthead{
+        margin-top:0.5vw;
+        margin-bottom: 0.7vw;
+        font-size: 2.1vw;
+    }
+    .contpara{
+        font-size:1.7vw;
+    }
+    .for-a-tag{
+        font-size: 1.7vw;
+    }
+/* Contact section Ends here */
+
+
+/* footer section */
+    #footer{
+        columns: 63vw 36vw;
+        height:6vw;
+    }
+    #footpara{
+        width:63vw;
+        margin-top:1vw;
+        margin-bottom:1vw;
+    }
+    #copyright{
+        font-size:2.4vw;
+    }
+    #footicon{
+        width:36vw;
+        /* border-style: solid; */
+    }
+    .footimg{
+        width:3.5vw;
+        height:3.5vw;
+        margin-top:1.4vw;
+    }
+}
+
+
+
+@media screen and (max-width:750px) {
+/* <!-- Header slider section Starts --> */
+    #header {
+        columns: 8vw 8vw 8vw 8vw;
+        column-gap: 5vw;
+        height: 6.5vw;
+        box-shadow:0px 0.5vw 3vw 6px rgb(220, 248, 217);
+    }   
+
+    a{
+        font-weight: 10px;
+        font-size: 3vw;
+    }
+/* Header Section Ends here */
+/* Image slider section Starts */
+
+    #home{
+        height:70vw;
+    }
+    .bg1{
+        height:58.14vw;
+    }
+    .bg{
+        margin-top:4vw;
+    }
+    .arrow{
+        padding:1.3vw;
+        top:29vw;
+        font-size :25px;
+    }
+/* Image slider section Ends */
+/* Welcome portion Starts Here */
+    #welcomediv {
+        margin-top:0px;
+        display: flex;
+        justify-content: center;
+    }
+    #welcome {
+        margin-top: 4vw;
+        /* margin-left:0.5vw; */
+        padding-left:1vw;
+        width: 62vw;
+        box-shadow: -3px 3px 5px grey;
+        font-size: 4vw;
+    }
+    #welcome:hover {  
+        width: 75vw;
+        font-size: 3.5vw;
+        letter-spacing: 0.8vw;
+    }
+
+    #tagline {
+        padding-top: 2vw;
+        width: 50vw;
+        margin-left: 25vw;
+        font-size: 2.3vw;
+    }
+
+        
+    #intro {
+        margin: 1vw 5vw 0vw 5vw;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 30vw 30vw;
+        /* margin-bottom:; */
+    }
+    .child {
+        width: 29.5vw;
+        height: 29.5vw;
+    }
+    .para {
+        padding: 2.6vw;
+        font-weight: 2vw;
+        font-size: 3.1vw;
+        word-spacing: 3vw;
+    }
+
+    .para:hover{
+        transform: scale(1.1);
+        border-radius: 1vw;
+        animation: ani21 0.4s;
+    }
+
+/* Welcome section Ends here */
+/* Restaurant Name section Begins */
+    
+    #popular-rest {
+        padding: 0.5vw 2vw;
+        margin: 0vw 22vw 6vw 20vw;
+        font-size: 3.2vw;
+        width:51vw;
+        box-shadow: -1vw 0.6vw 3px #1A5F7A;
+    }
+    
+@keyframes ani41 {
+    from {
+        transform: scaleX(1);
+        background-color: #116A7B;
+        color: white;
+        box-shadow: none;
+    }
+
+    to {
+        transform: scaleX(1.3);
+        
+        color: #116A7B;
+        background-color: white;
+        border-style: solid;
+        border-color: #002B5B;
+        }
+    }
+    #popular-rest:hover {
+        padding: 1vw;
+        animation : ani41 1s;
+        opacity: 0.7;
+    }
+    
+    #restaurant-container {
+        grid-template-columns: 35vw 35vw;
+        grid-template-rows: 7vw 7vw 7vw 7vw 7vw 7vw 7vw 7vw;
+        row-gap: 2.5vw;
+    }
+    
+    .res-name:hover {
+        letter-spacing: 1.7vw;
+    }
+    .res-name-child{
+        font-size: 2.6vw;
+    }
+/* Restaurant Section finishes here */    
+/* Facility section Starts here */
+    #facilities{
+        height:90vw;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw;
+    }
+    @keyframes ani31 {
+        from {
+            transform: scale(1);
+            box-shadow:-0.75vw 0.75vw 7px #33ae9d;
+        }
+
+        to {
+            transform: scale(1.1);
+            box-shadow:-0.075vw 0.075vw 15px -6px  grey , 0.075vw 0.075vw 15px -6px grey, -0.075vw -0.075vw 15px -5px grey,0.075vw -0.075vw 15px -6px grey;
+        }
+    }
+
+    .facchild {
+        height: 38vw;
+        width: 31vw;
+        margin: 2.8vw auto;
+        columns: 20vw 4vw 2.8vw;
+        border-radius: 5px;
+    }
+
+    .facchild:hover {
+        animation: ani31 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .fac {
+        width: 20vw;
+        height: 20vw;
+        margin-top:1.7vw;
+        margin-bottom:0.8vw;
+    }
+    .head {
+        font-size: 2.7vw;
+        padding: 0vw 1vw;
+    }
+
+    .line {
+        font-size: 2.3vw;
+        /* margin-top:1vw; */
+    }
+
+    #restdiv {
+        height: 13vw;
+    }
+    #shift1{
+        margin:auto;
+    }
+    #shift2{
+        margin:auto;
+}
+/* Facility section Ends here */
+/* Blog Section Starts  */
+    #blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        columns: 24vw 50vw 5vw;
+    }
+
+    #bloghead{
+        font-size:4vw;
+        font-family: forrest;
+        font-weight:1.7vw;
+        margin-top:10vw;
+        margin-bottom:1vw;
+        padding:0.5vw 0.5vw;
+    }
+    #iframe{
+        height:40vw;
+        width:70vw;
+        border-width: 0.4vw;
+        border-color: crimson;
+    }
+    #iframe:hover{
+        box-shadow: 1.5vw 1.5vw 1vw -1vw rgb(209, 60, 60)
+                ,  -1.5vw 1.5vw 1vw -1vw rgb(209,60,60)
+                ,  -1.5vw -1.5vw 1vw -1vw rgb(209,60,60)
+                ,   1.5vw -1.5vw 1vw -1vw rgb(209,60,60);
+    }
+    #blog>button{
+        height:5vw;
+        width:17.8vw;
+        margin:0.5vw auto;
+        letter-spacing: 0.5vw;
+    }
+/* Blog Section Ends  */
+/*  Contact section start */
+    #contactlink{
+        margin:10vw 20vw 6vw 34vw;
+        padding: 1vw 1vw;
+        font-size:4.5vw;
+    }
+
+    #contact{
+        /* border-style: solid; */
+        margin: auto 12vw;
+        display:grid;
+        grid-template-columns:16vw 16vw 16vw 16vw;
+        grid-template-rows: 20vw 20vw;
+        column-gap: 5vw;
+        row-gap: 2vw;
+        margin-bottom:8vw;
+        /* height:18vw; */
+    }
+    #call{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width:32vw;
+        height:20vw;
+        margin-left: 5vw;
+    }
+    #email{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        width:32vw;
+        height:20vw;
+        margin-right:  7vw;
+    }
+    #map{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width:32vw;
+        height:20vw;
+    }
+    .cont-child:hover{
+        box-shadow:1.3vw 1.3vw 1.5vw -0.5vw silver,1.3vw -1.3vw 1.5vw -0.5vw silver,-1.3vw 1.3vw 1.5vw -0.5vw silver,-1.3vw -1.3vw 1.5vw -0.5vw silver
+    }
+    .contimg{
+        width:9vw;
+        height:9vw;
+        /* border-style: solid; */
+    } 
+    .conthead{
+        font-size: 2.8vw;
+        font-family: forwel;
+    }
+    .contpara{
+        font-size: 2.4vw;
+        font-family: forwel;
+    } 
+/* Contact section Ends here */
+/* footer section */
+    #footer{
+        columns: 60vw 39vw;
+        column-gap: 2vw;
+    }
+    #footpara{
+        width:60vw;
+        justify-content:flex-end;
+        border-color:#1A5F7A ;
+    }
+    #copyright{
+        font-size:2.7vw;
+    }
+    #name{
+        font-size: 3.2vw;
+        color:#2B2A4C;
+    }
+    #footicon{
+        column-gap:0.8vw;
+        /* border-style: solid; */
+    }
+    .footimg{
+        width:4vw;
+        height:4vw;
+        margin-top:1vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #header {
+        columns: 8vw 8vw 8vw 8vw;
+        column-gap: 3cqmin;
+        height: 8vw;
+        width:100vw;
+        box-shadow:0px 0.5vw 3vw 6px rgb(220, 248, 217);
+    }   
+
+    a{
+        font-weight: 10px;
+        font-size: 3.4vw;
+    }
+/* Header Section Ends here */
+/* Image slider section Starts */
+
+    #home{
+        height:80vw;
+    }
+    .bg1{
+        height:63.14vw;
+    }
+    .bg{
+        margin-top:4vw;
+        width:100vw;
+    }
+    .arrow{
+        padding:1.3vw;
+        top:29vw;
+        font-size :25px;
+    }
+/* Image slider section Ends */
+/* Welcome portion Starts Here */
+    #welcomediv {
+        margin-top:0px;
+        display: flex;
+        justify-content: center;
+    }
+    #welcome {
+        margin-top: 4vw;
+        /* margin-left:0.5vw; */
+        padding-left:1vw;
+        width: 85vw;
+        box-shadow: -3px 3px 5px grey;
+        font-size: 5.5vw;
+    }
+    #welcome:hover {  
+        width: 95vw;
+        font-size: 5.5vw;
+        letter-spacing: 0.35vw;
+    }
+
+    #tagline {
+        padding-top: 5vw;
+        width: 70vw;
+        margin-left: 15vw;
+        font-size: 3.5vw;
+    }
+
+        
+    #intro {
+        margin: 1vw 9vw 0vw 8vw;
+        grid-template-rows: 40vw 40vw 40vw;
+        grid-template-columns: 40vw 40vw;
+        grid-gap: 3vw;
+        /* margin-bottom:; */
+    }
+    .child {
+        width: 40vw;
+        height: 40vw;
+    }
+    .para {
+        padding: 2.6vw;
+        font-weight: bold;
+        font-size: 4.4vw;
+        word-spacing: 3vw;
+    }
+
+    .para:hover{
+        transform: scale(1.1);
+        border-radius: 1vw;
+        animation: ani21 0.4s;
+    }
+
+/* Welcome section Ends here */
+/* Restaurant Name section Begins */
+    
+    #popular-rest {
+        padding: 0.5vw 2vw;
+        margin: 0vw 5vw 6vw 5vw;
+        font-size: 5.8vw;
+        width:86vw;
+        box-shadow: -1vw 0.6vw 3px #1A5F7A;
+    }
+    
+@keyframes ani41 {
+    from {
+        transform: scaleX(1);
+        background-color: #116A7B;
+        color: white;
+        box-shadow: none;
+    }
+
+    to {
+        transform: scaleX(1.1);
+        
+        color: #116A7B;
+        background-color: white;
+        border-style: solid;
+        border-color: #002B5B;
+        }
+    }
+    #popular-rest:hover {
+        padding: 1vw;
+        /* animation : ani41 1s; */
+        opacity: 0.7;
+    }
+    
+    #restaurant-container{
+        /* border-style: solid; */
+        margin:auto 5vw;
+        display:grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 13vw 13vw 13vw 13vw 13vw 13vw 13vw 13vw;
+    }
+    .res-name-child{
+        font-size:3.8vw;
+        font-weight:bold;
+    }
+    .res-name-child{
+        font-size:3.5vw;
+    }
+
+/* Restaurant Section finishes here */    
+/* Facility section Starts here */
+    #facilities{
+        height:400vw;
+        width:99vw;
+        display:flex;
+        columns:auto auto auto auto;
+        flex-direction: column;
+
+        /* grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw; */
+    }
+    @keyframes ani31 {
+        from {
+            transform: scale(1);
+            box-shadow:-0.75vw 0.75vw 7px #33ae9d;
+        }
+
+        to {
+            transform: scale(1.1);
+            box-shadow:-0.075vw 0.075vw 15px -6px  grey , 0.075vw 0.075vw 15px -6px grey, -0.075vw -0.075vw 15px -5px grey,0.075vw -0.075vw 15px -6px grey;
+        }
+    }
+
+    .facchild {
+        height: 90vw;
+        width: 70vw;
+        /* margin: 2.8vw auto; */
+        columns: 20vw 4vw 2.8vw;
+        border-radius: 5px;
+    }
+
+    .facchild:hover {
+        animation: ani31 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .fac {
+        width: 50vw;
+        height: 50vw;
+        margin-top:3vw;
+        margin-bottom:1.8vw;
+    }
+    .head {
+        font-size: 6.5vw;
+        padding: 0vw 1vw;
+    }
+
+    .line {
+        font-size: 5.3vw;
+        margin-left:4vw;
+    }
+
+    #restdiv {
+        height: 13vw;
+    }
+    #shift1{
+        margin:auto;
+    }
+    #shift2{
+        margin:auto;
+}
+/* Facility section Ends here */
+/* Blog Section Starts  */
+    #blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        columns: 44vw 50vw 5vw;
+    }
+
+    #bloghead{
+        font-size:6vw;
+        font-family: forrest;
+        font-weight:1.7vw;
+        margin-top:20vw;
+        margin-bottom:2vw;
+        padding:1vw;
+    }
+    #iframe{
+        height:55vw;
+        width:90vw;
+        border-width: 1vw;
+    }
+    #iframe:hover{
+        box-shadow: 1.5vw 1.5vw 1vw -1vw rgb(209, 60, 60)
+                ,  -1.5vw 1.5vw 1vw -1vw rgb(209,60,60)
+                ,  -1.5vw -1.5vw 1vw -1vw rgb(209,60,60)
+                ,   1.5vw -1.5vw 1vw -1vw rgb(209,60,60);
+    }
+    #blog>button{
+        height:5vw;
+        width:30vw;
+        margin:2vw auto;
+        letter-spacing: 0.7vw;
+    }
+/* Blog Section Ends  */
+/*  Contact section start */
+    #contactlink{
+        width:60vw;
+        margin:20vw 20vw 10vw 19vw;
+        padding: 1vw 1vw;
+        font-size:9.5vw;
+        background-color: white;
+        color:#2B2A4C;
+        color:#0E5E6F;
+    }
+
+    #contact{
+        display:flex;
+        columns:75vw 75vw 75vw;
+        flex-direction:column;
+        /* border-style: solid; */
+        justify-content: center;
+        align-items: center;
+    }
+    #call{
+        width:75vw;
+        height:50vw;
+        margin:0px;
+        margin-bottom:5vw;
+        padding:0px;
+        border-radius: 15px;
+    }
+    #email{
+        width:75vw;
+        height:50vw;
+        margin:0px;
+        margin-bottom:5vw;
+        padding:0px;
+        border-radius: 15px;
+        /*
+        margin-right:  7vw; */
+    }
+    #map{
+        width:75vw;
+        height:50vw;
+        margin:0px;
+        padding:0px;
+        border-radius: 15px;
+        /* width:32vw;
+        height:20vw; */
+    }
+    .cont-child:hover{
+        box-shadow:2vw 2vw 1.5vw -0.5vw silver
+                  ,2vw -2vw 1.5vw -0.5vw silver,
+                  -2vw 2vw 1.5vw -0.5vw silver,
+                  -2vw -2vw 1.5vw -0.5vw silver
+    }
+    .contimg{
+        width:20vw;
+        height:20vw;
+        /* border-style: solid; */
+    } 
+    .conthead{
+        font-size: 8vw;
+        font-family: forwel;
+    }
+    .contpara{
+        font-size: 7vw;
+        font-family: forwel;
+    } 
+/* Contact section Ends here */
+/* footer section */
+    #footer{
+        height:30vw;
+        columns:20vw 10vw;
+        column-gap: 10vw;
+        flex-direction:column;
+    }
+    #footpara{
+        order:2;
+        height:10vw;
+        width:99vw;
+        display: flex;
+        justify-content: center;
+    }
+    #copyright{
+        font-size:4.8vw;
+        font-weight: bolder;
+        letter-spacing: 0.2vw;
+    }
+    #name{
+        font-size: 5vw;
+        color:#2B2A4C;
+    }
+    #footicon{
+        order:1;
+        height:15vw;
+        width:99vw;
+        display:flex;
+        column-gap:3vw;
+        justify-content: center;
+        align-content: center;
+        margin-top:5vw;
+    }
+    .footimg{
+        width:13vw;
+        height:13vw;
+    }
+}
